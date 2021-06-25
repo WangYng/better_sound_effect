@@ -9,7 +9,7 @@ A Sound Effect Player for Flutter.
 
 ```yaml
 dependencies:
-  better_sound_effect: ^0.0.2
+  better_sound_effect: ^0.0.3
 ```
 
 2. Install it

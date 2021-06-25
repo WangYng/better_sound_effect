@@ -23,7 +23,7 @@ class _MyAppState extends State<MyApp> {
     super.initState();
 
     Future.microtask(() async {
-      soundId = await soundEffect.loadAssetAudioFile("assets/button.wav");
+      soundId = await soundEffect.loadAssetAudioFile("assets/amazing.wav");
     });
   }
 

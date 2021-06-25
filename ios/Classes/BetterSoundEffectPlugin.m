@@ -28,7 +28,12 @@
 - (void)play:(NSInteger)soundId {
     NSObject *player = [self.soundPool objectAtIndex:soundId];
     if ([player isKindOfClass:AVAudioPlayer.class]) {
-        [((AVAudioPlayer *)player) play];
+        AVAudioPlayer *audioPlayer = ((AVAudioPlayer *)player);
+        if (audioPlayer.isPlaying) {
+            [audioPlayer pause];
+        }
+        audioPlayer.currentTime = 0;
+        [audioPlayer play];
     }
 }
 
