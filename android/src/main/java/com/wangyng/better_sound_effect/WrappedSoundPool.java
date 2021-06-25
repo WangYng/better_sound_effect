@@ -16,8 +16,9 @@ public class WrappedSoundPool {
 
     private static SoundPool createSoundPool() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            AudioAttributes attrs = new AudioAttributes.Builder().setLegacyStreamType(AudioManager.USE_DEFAULT_STREAM_TYPE)
-                    .setUsage(AudioAttributes.USAGE_GAME)
+            AudioAttributes attrs = new AudioAttributes.Builder()
+                    .setLegacyStreamType(AudioManager.STREAM_MUSIC)
+                    .setUsage(AudioAttributes.USAGE_MEDIA)
                     .build();
             return new SoundPool.Builder()
                     .setAudioAttributes(attrs)

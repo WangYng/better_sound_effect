@@ -14,7 +14,7 @@ EXTERNAL SOURCES:
     :path: Flutter
 
 SPEC CHECKSUMS:
-  better_sound_effect: fcc14c085e9a6902325cccda78c6834705672976
+  better_sound_effect: fad6b9180432c4ecc9054820985e2a7041f01f3a
   Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
 
 PODFILE CHECKSUM: 8e679eca47255a8ca8067c4c67aab20e64cb974d
